@@ -1,0 +1,147 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+ 
+ body {
+   height: 100vh;
+   background: linear-gradient(
+     90deg,
+     rgb(60, 185, 130, 1) 0%,
+     rgba(0, 212, 255, 1) 100%
+   );
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .container {
+   border: 2px solid #fff;
+   padding: 30px 40px;
+   width: 80%;
+   max-width: 600px;
+   margin: 0 auto;
+ }
+ 
+ .new-task-container {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+ }
+ 
+ .new-task-input {
+   flex: 3;
+   font-size: 1rem;
+   border: 2px solid #d1d3d4;
+   padding: 12px;
+   font-weight: 500;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .new-task-input:focus {
+   outline: none;
+   border-color: #41b883;
+ }
+ 
+ .new-task-button {
+   flex: 1;
+   border-radius: 5px;
+   font-weight: 500;
+   font-size: 1rem;
+   border: none;
+   background-color: #41b883;
+   color: #fff;
+   padding: 12px;
+   margin-left: 12px;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+ }
+ 
+ .new-task-button:hover {
+   transform: scale(1.05);
+ }
+ 
+ .tasks-count {
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 10px;
+   color: #888;
+ }
+ 
+ .task-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 6px 0;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .task-item.completed {
+   background-color: #f7f7f7;
+   border: 1px solid #ccc;
+   text-decoration: line-through;
+   opacity: 0.7;
+ }
+ 
+ .task-item i {
+   background-color: #41b883;
+   color: #fff;
+   padding: 12px;
+   border-radius: 5px;
+ }
+ 
+ .task-item.deleting {
+   animation: fadeOut 0.3s ease;
+ }
+ 
+  fadeOut {from {
+     opacity: 1;
+   }
+   to {
+     opacity: 0;
+     transform: translateY(-10px);
+   }
+ }
+
+
+
+ /*CÓDIGO MÁGICO*/
+
+.menu {
+  list-style-type: none; /* Remove os marcadores de lista */
+  margin: 0;
+  padding: 0;
+  background-color: hwb(0 95% 5%); /* Define a cor de fundo do menu */
+  border-radius: 10px;
+}
+
+.menu li {
+  display: inline-block; /* Faz com que os itens de menu fiquem um ao lado do outro */
+}
+
+.menu li a {
+  display: block; /* Define os links como elementos de bloco para ocuparem todo o espaço horizontal disponível */
+  padding: 8px 16px; /* Adiciona espaçamento interno aos links */
+  text-decoration: none; /* Remove a decoração de texto padrão (sublinhado) */
+  color: #333; /* Define a cor do texto dos links */
+}
+
+.menu li a:hover {
+  background-color: #550469; /* Define a cor de fundo ao passar o mouse sobre os links */
+  color: #fff; /* Define a cor do texto ao passar o mouse sobre os links */
+  border-radius: 10px;
+}
+
+.menuloja{
+  float:right;
+}
+
+  
